@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Cena</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Cena</string>
+    <string name="nav_header_subtitle">"What's for Dinner!"</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="calenderName">Calender</string>
+    <string name="recipesName">Recipes</string>
+    <string name="cupboardName">Cupboard</string>
+    <string name="settings">Tools</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="recipe_image">recipe image</string>
+</resources>
