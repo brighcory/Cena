@@ -23,11 +23,12 @@ class RecipeAdapter(private val mContext: Context, private val mRecipes: ArrayLi
 
     override fun onBindViewHolder(holder: RecipeAdapter.ViewHolder, position: Int) {
         holder.bindRecipe(mRecipes[position])
+        holder.recipeName.text = mRecipes[position].name
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val recipeImage: ImageView = itemView.findViewById(R.id.recipe_image)
-        private val recipeName: TextView = itemView.findViewById(R.id.recipe_name_text_view)
+        val recipeImage: ImageView = itemView.findViewById(R.id.recipe_image)
+        val recipeName: TextView = itemView.findViewById(R.id.recipe_name_text_view)
         fun bindRecipe(recipe: Recipe) {
             recipeName.text = recipe.name
         }

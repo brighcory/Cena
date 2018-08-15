@@ -1,4 +1,11 @@
 package com.merlin.bright.cory.cena
 
-class RecipeActivity {
+import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+
+class RecipeActivity: AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.recipe_display)
+    }
 }
