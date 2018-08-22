@@ -18,6 +18,8 @@
     <string name="dinner">Dinner</string>
     <string name="recipe_image">recipe image</string>
     <string name="picture_of_food">Picture of food</string>
-    <string name="recipe_name_label">Recipe</string>
+    <string name="recipe_name_label">Recipes</string>
     <string name="recipe_picture">Recipe picture</string>
+    <string name="title_activity_recipe">Recipe Activity</string>
+    <string name="add_recipe">Add Recipe</string>
 </resources>

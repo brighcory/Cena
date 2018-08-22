@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:tools="http://schemas.android.com/tools"
-      tools:showIn="navigation_view">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_calender"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/calenderName"/>
+            android:title="@string/calenderName" />
         <item
             android:id="@+id/nav_Recipes"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/recipesName"/>
+            android:title="@string/recipesName" />
         <item
             android:id="@+id/nav_Cupboard"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/cupboardName"/>
+            android:title="@string/cupboardName" />
         <item
             android:id="@+id/nav_tools"
             android:icon="@drawable/ic_menu_manage"
-            android:title="@string/settings"/>
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_add_recipe"
+            android:icon="@drawable/ic_menu_add_recipe"
+            android:title="@string/add_recipe" />
     </group>
 
     <item android:title="@string/communicate">
@@ -27,11 +31,11 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="@string/share"/>
+                android:title="@string/share" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/send"/>
+                android:title="@string/send" />
         </menu>
     </item>
 

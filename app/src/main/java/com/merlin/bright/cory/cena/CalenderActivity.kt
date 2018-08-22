@@ -2,9 +2,7 @@ package com.merlin.bright.cory.cena
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.NavigationView
-import android.support.design.widget.Snackbar
 import android.support.v4.view.GravityCompat
 import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
@@ -27,12 +25,6 @@ class CalenderActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         setContentView(R.layout.activity_main)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
-
-        val fab = findViewById<FloatingActionButton>(R.id.fab)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
 
         val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
         val toggle = ActionBarDrawerToggle(
@@ -92,11 +84,10 @@ class CalenderActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
             }
             R.id.nav_Recipes -> {
 
-                val intent =Intent(this, RecipeListActivity::class.java)
+                val intent = Intent(this, RecipeListActivity::class.java)
                 startActivity(intent)
             }
             R.id.nav_Cupboard -> {
-
             }
             R.id.nav_tools -> {
 
@@ -105,6 +96,11 @@ class CalenderActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
             }
             R.id.nav_send -> {
+
+            }
+            R.id.nav_add_recipe -> {
+                val intent = Intent(this, RecipeActivity::class.java)
+                startActivity(intent)
 
             }
         }

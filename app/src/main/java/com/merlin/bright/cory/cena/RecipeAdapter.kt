@@ -28,7 +28,7 @@ class RecipeAdapter(private val mContext: Context, private val mRecipes: ArrayLi
         holder.recipeImage.setImageResource(mRecipes[position].photoID!!)
 
         val ingredientsList = mRecipes[position].ingredients?.split("`")
-        val textView: Array<TextView?> = arrayOfNulls<TextView>(ingredientsList!!.size)
+        val textView: Array<TextView?> = arrayOfNulls(ingredientsList!!.size)
         for ((i, item) in ingredientsList.withIndex()) {
             textView[i] = TextView(mContext)
             textView[i]!!.text = item
